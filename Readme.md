@@ -13,3 +13,8 @@
 - Function
   - No Return (Void) Function
   - Return (Non-Void) Function
+
+# Exercise
+
+- Balance
+- Ganjil-Genap + FizzBuzz
