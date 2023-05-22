@@ -1,14 +1,12 @@
-/**
- * This is a `sum` function.
- * @description use this function to sum 2 number
- * @param {number} a - First number
- * @param {number} b - Second number
- * @returns {number}
- * @example
- * sum(2, 3)
- */
-function sum(a, b) {
-  return a + b;
+function greeting(name, age, gender, address) {
+  // early return
+  if (age <= 17) {
+    return "you are still a kid";
+  }
+  return `Hello ${name}, address ${address}, gender ${gender}, age ${age}`;
 }
 
-console.log(sum(2, 3)); // [out] 5
+const john = greeting("John Doe", 25, "male", "Indonesia");
+const camelia = greeting("Camelia", 12, "female", "England");
+console.log(john);
+console.log(camelia);

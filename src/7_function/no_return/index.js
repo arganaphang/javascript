@@ -1,11 +1,8 @@
-/**
- * This is a `greeting` function.
- * @param {string} name - A string param
- * @example
- * greeting('John Doe')
- */
-function greeting(name) {
-  console.log(`Hello ${name}`);
+function greeting(name, age, gender, address) {
+  console.log(
+    `Hello ${name}, address ${address}, gender ${gender}, age ${age}`
+  );
 }
 
-greeting("Monkey D. Luffy"); // [out] Hello Monkey D. Luffy
+greeting("John Doe", 25, "male", "Indonesia");
+greeting("Camelia", 18, "female", "England");
