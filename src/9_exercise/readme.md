@@ -4,7 +4,7 @@
 
 ### 1 - 5
 
-- [ ] FizzBuzz
+- [x] FizzBuzz
 - [ ] Login System
 
 ### 6 - 8
