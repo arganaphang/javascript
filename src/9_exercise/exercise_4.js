@@ -33,14 +33,21 @@ function list() {
 }
 
 function printTodos() {
+  // console.log("TODOS")
+  // console.log(list())
+  // ? Print Title
   console.log(
     "========================================TODOS========================================\n\n"
   );
+  // ? Print Table Header
   console.log(`ID\t\t| Title\t\t\t| Created At`);
+  // ? Print Table Divider
   console.log(
     `====================================================================================================`
   );
+  // ? Loop Todos using map method from array
   list().map(function (todo) {
+    // ? Print Todo (Singular) with fixed Tab (for styling)
     console.log(`${todo.id} \t| ${todo.title} \t| ${todo.created_at}`);
   });
 }
