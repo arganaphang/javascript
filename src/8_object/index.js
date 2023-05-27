@@ -1,12 +1,24 @@
-const person = {
-  name: "John Doe",
-  age: 25,
+const john = {
+  name: {
+    firstName: "John",
+    lastName: "Doe",
+  },
   email: "johndoe@mail.com",
-  is_single: true,
+  age: 35,
+  country: "Indonesia",
+  child: [
+    {
+      name: "Carla",
+      gender: "female", // 2 "female" | "male"
+    },
+    {
+      name: "Lucas",
+      gender: "male",
+    },
+  ],
 };
-
-console.log(person.name); // [out] "John Doe"
-console.log(person.age); // [out] 25
-console.log(person.email); // [out] "johndoe@mail.com"
-console.log(person.is_single); // [out] true
-console.log(person.Email); // [out] undefined
+const { name, email, country } = john; // deconstruction
+// const name = john.name;
+// const email = john.email;
+// const country = john.country;
+console.log(name, email, country);
