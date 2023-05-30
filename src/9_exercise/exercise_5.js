@@ -10,7 +10,7 @@ Account
   - amount
 */
 
-let DATABASE = [];
+let DATABASE = [{}, {}];
 
 function createAccount(username, name) {
   const newAccount = {
@@ -34,7 +34,7 @@ function topup(username, amount) {
 
 function transfer(from, to, amount) {
   // ? Searching Sender
-  let sender = -1;
+  let sender = null;
   for (let idx = 0; idx < DATABASE.length; idx++) {
     if (DATABASE[idx].username === from) {
       sender = idx;
@@ -42,7 +42,7 @@ function transfer(from, to, amount) {
     }
   }
   // ? Searching Receiver
-  let receiver = -1;
+  let receiver = null;
   for (let idx = 0; idx < DATABASE.length; idx++) {
     if (DATABASE[idx].username === to) {
       receiver = idx;
@@ -50,7 +50,7 @@ function transfer(from, to, amount) {
     }
   }
   // ? Check if sender or receiver not found
-  if (sender === -1 || receiver === -1) {
+  if (sender === null || receiver === null) {
     console.log("Sender or Receiver not found");
     return;
   }
